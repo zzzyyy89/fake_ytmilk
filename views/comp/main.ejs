@@ -1,0 +1,51 @@
+<div class="m-menu">
+    <div class="menu-wrapper">
+        <button id="m-dl-btn"></button>
+        <ul class="m-dl-menu">
+            <li class="m-i1">
+                <a href="/about"><i></i><b>关于燕塘</b></a>
+            </li>
+            <li class="m-i2"><a href="/products"><i></i><b>燕塘产品</b></a></li>
+            <li class="m-i3"><a href="/shop"><i></i><b>在线商城</b></a></li>
+            <li class="m-i4"><a href="/news"><i></i><b>新闻活动</b></a></li>
+            <li class="m-i5"><a href="/developing"><i></i><b>持续发展</b></a></li>
+            <li class="m-i6"><a href="/contact"><i></i><b>联系我们</b></a></li>
+
+            <%if(sub.length>0){%>
+                <li class="sub">
+                    <%for(var i=0;i<sub.length;i++){%>
+                    <a href="<%=sub[i].url%>"><%=sub[i].title%></a>
+                    <%}%>
+                </li>
+            <%}%>
+        </ul>
+    </div>
+</div>
+<div class="menu">
+    <div id="box1">
+        <ul>
+            <li class="t1"><a href="/"><i></i>首页</a></li>
+            <li class="t2"><a href="/about"><i></i>关于燕塘</a></li>
+            <li class="t3"><a href="/products"><i></i>燕塘产品</a></li>
+            <li class="t4"><a href="/shop"><i></i>在线商城</a></li>
+            <li class="t5"><a href="/news"><i></i>新闻与活动</a></li>
+            <li class="t6"><a href="/developing"><i></i>可持续发展</a></li>
+            <li class="t7"><a href="/contact"><i></i>联系我们</a></li>
+        </ul>
+    </div>
+    <div id="box2">
+        <div class="container">
+            <div class="toggle">
+                <p>菜单</p>
+            </div>
+        </div>
+        <span class="item hidden t1"><a href="/"><i></i>首页</a></span>
+        <span class="item hidden t2"><a href="/about"><i></i>关于燕塘</a></span>
+        <span class="item hidden t3"><a href="/products"><i></i>燕塘产品</a></span>
+        <span class="item hidden t4"><a href="/shop"><i></i>在线商城</a></span>
+        <span class="item hidden t5"><a href="/news"><i></i>新闻与活动</a></span>
+        <span class="item hidden t6"><a href="/developing"><i></i>可持续发展</a></span>
+        <span class="item hidden t7"><a href="/contact"><i></i>联系我们</a></span>
+    </div>
+</div>
+<div class="logo"><a href="/"><img src="/images/logo1.png" alt=""></a></div>
